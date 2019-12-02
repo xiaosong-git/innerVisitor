@@ -1,6 +1,7 @@
 package com.xiaosong.routes;
 
 import com.jfinal.config.Routes;
+import com.xiaosong.common.access.inAndOut.InAndOutController;
 import com.xiaosong.common.admin.DemoController;
 
 /**
@@ -25,6 +26,7 @@ public class GlobalRoutes extends Routes{
 		//该处还可配置route级别的拦截器，对N个含有共同拦截器的控制层实现统一配置，减少代码冗余
 		
 		this.add("/demo", DemoController.class);
+		this.add("/inAndOut", InAndOutController.class);
 	}
 
 }
