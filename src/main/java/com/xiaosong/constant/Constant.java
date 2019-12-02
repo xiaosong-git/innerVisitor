@@ -34,6 +34,11 @@ public class Constant {
 	public final static String SYS_ROLE_MENU = "SYS_ROLE_MENU";
 	
 	/**
+	 * 字典表缓存key
+	 */
+	public final static String DICTIONARY_MENU = "DICTIONARY_MENU";
+	
+	/**
 	 * 是否开发模式-生产是自动加载改为false即可，自动加载生产配置文件
 	 */
 	public final static Boolean DEV_MODE = true;

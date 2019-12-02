@@ -41,6 +41,14 @@
            timeToLiveSeconds="0"
            overflowToDisk="false"
             />
+    <!-- 字典表数据载如缓存 -->
+    <cache name="DICTIONARY_MENU"
+           maxEntriesLocalHeap="500"
+           eternal="false"
+           timeToIdleSeconds="1800"
+           timeToLiveSeconds="0"
+           overflowToDisk="false"
+            />
 <!-- 
 	name：Cache的名称，必须是唯一的(ehcache会把这个cache放到HashMap里)。
 	maxElementsInMemory：内存中保持的对象数量。

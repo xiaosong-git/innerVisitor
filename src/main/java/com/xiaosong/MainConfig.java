@@ -20,6 +20,7 @@ import com.jfinal.plugin.ehcache.EhCachePlugin;
 import com.jfinal.plugin.redis.RedisPlugin;
 import com.jfinal.template.Engine;
 import com.jfinal.template.source.ClassPathSourceFactory;
+import com.xiaosong.cache.DictionaryCache;
 import com.xiaosong.constant.Constant;
 import com.xiaosong.model._MappingKit;
 import com.xiaosong.routes.GlobalRoutes;
@@ -158,7 +159,8 @@ public class MainConfig extends JFinalConfig {
 	//项目启动后操作，常用场景可以加载一些定时任务JOB类可在此处加载启动
 	@Override
 	public void afterJFinalStart() {
-		
+		DictionaryCache dic = new DictionaryCache();
+		dic.intoCache();
 	}
 
 	public static void main(String[] args) {
