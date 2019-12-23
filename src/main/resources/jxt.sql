@@ -11,3 +11,12 @@
 		#end
 	#end
 #end
+#namespace("inAndOut")
+	#include("com/xiaosong/common/access/inAndOut/inAndOut.sql")
+#end
+#namespace("demo")
+	#include("com/xiaosong/common/admin/demo.sql")
+#end
+#namespace("companyUser")
+	#include("com/xiaosong/common/access/companyUser/companyUser.sql")
+#end

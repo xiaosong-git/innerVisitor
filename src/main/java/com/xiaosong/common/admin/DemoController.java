@@ -1,6 +1,9 @@
 package com.xiaosong.common.admin;
 
+import java.util.List;
+
 import com.jfinal.core.Controller;
+import com.jfinal.plugin.activerecord.Record;
 import com.xiaosong.util.RetUtil;
 
 /**
@@ -16,7 +19,11 @@ public class DemoController extends Controller{
 		renderJson(RetUtil.ok("news",srv.findTblNews()));
 	}*/
 	
-	
+	public void index() {
+		List<Record> list = srv.findDictionaty();
+		System.out.println(list.get(0));
+		renderJson(RetUtil.ok("Dictionaty",list));
+	}
 	public void aa(){
 		renderText("test");
 	}

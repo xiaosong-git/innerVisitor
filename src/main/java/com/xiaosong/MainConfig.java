@@ -9,7 +9,6 @@ import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
-import com.jfinal.kit.PathKit;
 import com.jfinal.kit.Prop;
 import com.jfinal.kit.PropKit;
 import com.jfinal.log.Log4jLogFactory;
@@ -41,7 +40,6 @@ public class MainConfig extends JFinalConfig {
 		}else{
 			return PropKit.use("db_product.properties").append("config_product.properties");
 		}
-		
 	}
 	
 

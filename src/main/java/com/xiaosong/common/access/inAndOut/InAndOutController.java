@@ -2,14 +2,13 @@ package com.xiaosong.common.access.inAndOut;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.jfinal.core.Controller;
+import com.xiaosong.common.base.BaseController;
 /**
 * @author xiaojf
 * @version 创建时间：2019年12月2日 下午2:27:17
 * 通行记录接口（用于文件传输）
 */
-public class InAndOutController extends Controller{
+public class InAndOutController extends BaseController{
 	
 	public InAndOutService inAndOutService = InAndOutService.me;
 	

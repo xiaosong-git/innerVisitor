@@ -1,8 +1,10 @@
 package com.xiaosong.routes;
 
 import com.jfinal.config.Routes;
+import com.xiaosong.common.access.companyUser.CompanyUserController;
 import com.xiaosong.common.access.inAndOut.InAndOutController;
 import com.xiaosong.common.admin.DemoController;
+import com.xiaosong.common.app.key.KeyController;
 
 /**
  * 所有控制器配置地址以及route级别过滤器
@@ -27,6 +29,8 @@ public class GlobalRoutes extends Routes{
 		
 		this.add("/demo", DemoController.class);
 		this.add("/inAndOut", InAndOutController.class);
+		this.add("/companyUser", CompanyUserController.class);
+		this.add("/key", KeyController.class);
 	}
 
 }
